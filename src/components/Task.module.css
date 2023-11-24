@@ -1,0 +1,91 @@
+.task{
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  border-radius: .5rem;
+
+  background: var(--gray-400);
+  gap: 0.75rem;
+  padding: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.taskContent{
+  display: flex;
+  padding: 3px;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.task label input[type='checkbox'] {
+  display: none;
+}
+
+.checkbox{
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.checkboxUnchecked {
+  border: 2px solid var(--blue-500);
+}
+
+.checkboxUnchecked:hover{
+  background: var(--blue-900);
+}
+
+.checkboxChecked{
+  border: 2px solid var(--purple-900);
+  background-color: var(--purple-900);
+}
+
+.checkboxChecked:hover {
+  border: 2px solid var(--purple-500);
+  background-color: var(--purple-500);
+}
+
+.taskCompleteParagraph{
+  color: var(--Gray-300, #808080);
+  font-size:  .75rem;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+
+  text-decoration: line-through;
+  flex: 1;
+}
+
+.taskIncompleteParagraph{
+  color: var(--gray-100);
+  font-family: Inter;
+  font-size: .75rem;
+  font-weight: 400;
+  line-height: 140%;
+
+  flex: 1;
+}
+
+
+.deleteButton{
+  background: transparent;
+  margin-top: -0.3rem;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  padding: 0.3rem;
+  box-sizing:content-box;
+  border: none;
+}
+
+.deleteButton:hover{
+  border-radius: 4px;
+  color: var(--danger);
+  background: var(--gray-500);
+}
